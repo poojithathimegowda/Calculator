@@ -1,0 +1,33 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="395" Width="512">
+    <Grid Margin="0,17,0,1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="327*"/>
+        </Grid.RowDefinitions>
+        <Button Content="1" HorizontalAlignment="Left" Height="53" Margin="26,74,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button Content="4" HorizontalAlignment="Left" Height="53" Margin="26,132,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button Content="7" HorizontalAlignment="Left" Height="53" Margin="26,190,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button Content="0" HorizontalAlignment="Left" Height="53" Margin="26,256,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button Content="2" HorizontalAlignment="Left" Height="53" Margin="138,74,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button Content="5" HorizontalAlignment="Left" Height="53" Margin="138,132,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button Content="8" HorizontalAlignment="Left" Height="53" Margin="138,190,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button x:Name="multiply" Content="*" HorizontalAlignment="Left" Height="53" Margin="138,256,0,0" VerticalAlignment="Top" Width="107" Click="operation" Grid.Row="1" />
+        <Button Content="3" HorizontalAlignment="Left" Height="53" Margin="250,74,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button Content="6" HorizontalAlignment="Left" Height="53" Margin="250,132,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button Content="9" HorizontalAlignment="Left" Height="53" Margin="250,190,0,0" VerticalAlignment="Top" Width="107" Click="number_Click" Grid.Row="1"/>
+        <Button x:Name="divide" Content="/" HorizontalAlignment="Left" Height="53" Margin="250,256,0,0" VerticalAlignment="Top" Width="107" Click="operation" Grid.Row="1" />
+        <Button x:Name="add" Content="+" HorizontalAlignment="Left" Height="53" Margin="362,74,0,0" VerticalAlignment="Top" Width="107" Click="operation" Grid.Row="1"/>
+        <Button x:Name="subtract" Content="-" HorizontalAlignment="Left" Height="53" Margin="362,132,0,0" VerticalAlignment="Top" Width="107" Click="operation" Grid.Row="1"/>
+        <Button x:Name="clear" Content="CLR" HorizontalAlignment="Left" Height="53" Margin="362,190,0,0" VerticalAlignment="Top" Width="107" Click="clear_Click" Grid.Row="1" />
+        <Button x:Name="result" Content="=" HorizontalAlignment="Left" Height="53" Margin="362,256,0,0" VerticalAlignment="Top" Width="107" Click="result_Click" Grid.Row="1" />
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="85" Margin="26,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="443" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Grid.RowSpan="2"/>
+
+    </Grid>
+</Window>
