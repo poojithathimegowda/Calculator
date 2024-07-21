@@ -20,7 +20,7 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
-        int a, b, finalResult;
+        int firstNumber, secondNumber, finalResult;
         string operationMethod;
         public MainWindow()
         {
@@ -40,32 +40,32 @@ namespace Calculator
         private void clear_Click(object sender, RoutedEventArgs e)
         {
             textBox.Text = "0";
-            a = 0;
-            b = 0;
+            firstNumber = 0;
+            secondNumber = 0;
             finalResult = 0;
         }
         private void operation(object sender, RoutedEventArgs e)
         {
             operationMethod = (sender as Button).Name;
-            a= Int32.Parse(textBox.Text);
+            firstNumber= Int32.Parse(textBox.Text);
             textBox.Text= "0";
         }
         private void result_Click(object sender, RoutedEventArgs e)
         {
-            b = Int32.Parse(textBox.Text);
+            secondNumber = Int32.Parse(textBox.Text);
             switch (operationMethod)
             {
                 case "add":
-                    finalResult = a + b;
+                    finalResult = firstNumber + secondNumber;
                    break;
                 case "subtract":
-                    finalResult = a - b;
+                    finalResult = firstNumber - secondNumber;
                     break;
                 case "multiply":
-                    finalResult = a * b;
+                    finalResult = firstNumber * secondNumber;
                     break;
                 case "divide":
-                    finalResult = a / b;
+                    finalResult = firstNumber / secondNumber;
                     break;
 
             }
